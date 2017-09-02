@@ -1,0 +1,28 @@
+.film-container{
+  padding-top:10px;
+  padding-bottom:10px;
+  width:94%;
+  margin:0 auto;
+
+}
+.film-item{
+  width:30%;
+  display:inline-block;
+  margin:0 1% 16px 2%;
+
+}
+.film-image{
+  width:100px;
+  height:147px;
+  display: block;
+}
+.film-title{
+  font-size: 0.6em;
+  font-weight: 600;
+  line-height: 0.8;
+}
+.film-rate{
+  font-size: 0.4em;
+  display: block;
+  line-height: 0.7;
+}

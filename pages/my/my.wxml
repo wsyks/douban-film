@@ -1,0 +1,6 @@
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl?userInfo.avatarUrl:'http://7xsgg1.com1.z0.glb.clouddn.com/my1.png'}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName?userInfo.nickName:"未登录"}}</text>
+  </view>
+</view>

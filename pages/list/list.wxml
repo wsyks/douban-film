@@ -1,0 +1,13 @@
+<scroll-view class="">
+  <view class="film-container container">
+    <view wx:for-items="{{films}}"  wx:for-item="film" wx:key="id" class="film-item" data-title="{{film.title}}" data-id="{{film.id}}"  bindtap="detail">
+      <image src="{{film.images.medium}}" alt="{{film.alt}}" class="film-image"></image>  
+      <text class="film-title">{{film.title}}</text>  
+      <text class="film-rate">{{film.rating.average==0?"暂无评分":"评分:"+film.rating.average}}</text>  
+    </view> 
+  </view>
+  <view class="weui-loadmore" hidden="{{!hasMore}}">
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore__tips">加载更多</view>
+  </view> 
+</scroll-view>

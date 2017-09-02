@@ -1,0 +1,106 @@
+/* pages/movie/movie.wxss */
+.film-image{
+  width:100px;
+height:147px;
+z-index:1000;
+/* position:absolute; */
+/* top:60px; */
+left:20px;
+position:relative;
+overflow:visible;
+top:3px;
+
+
+}
+.film-header{
+  background-repeat:no-repeat;
+background-size:cover;
+height:180px;
+position:relative;
+z-index:1;
+overflow:visible;
+
+}
+.header-content{
+  position: relative;
+  top:30px;
+
+}
+.film-header::before{
+  content:"";
+ position:absolute; 
+top:0;
+bottom:0px;
+left:0;
+right:0;
+background-color:rgba(0,0,0,0.7);
+/* z-index:3; */
+
+}
+
+.film-title{
+  color:#fff;
+  display: block;
+  font-size: 1.1em;
+}
+
+.film-firstinfo{
+  position:absolute;
+  top:35px;
+  left:130px;
+}
+
+.film-rate{
+  color: #fff;
+  font-size: 1.6em;
+}
+.film-ratecount{
+  color: #ccc;
+  font-size: 0.6em;
+}
+.film-info{
+  margin:20px 18px;
+}
+.film-reinfo{
+  /* letter-spacing: 1px; */
+  word-spacing:0.02em;
+  font-size: 0.65em;
+  line-height: 1.8;
+}
+
+.film-summary{
+
+}
+
+.film-summarytitle{
+  color:#c9c9c9;
+  font-size: 0.7em;
+  margin:8px 0;
+  display: block;
+}
+
+.film-summarycontent{
+  font-size: 0.75em;
+  display: block;
+  line-height: 1.7
+}
+.film-btn{
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid #FAAE53;
+  color: #FAAE53;
+  padding:4px 6px; 
+  width: calc(50% - 10px);
+  margin-top:20px;
+  /* margin: 0 10px; */
+  display: inline-block; 
+  font-size: 0.7em;
+  line-height: 1.5;
+}
+.film-btn-hover{
+  background-color: #FAAE53;
+  color: #fff;
+}
+.m-r-20{
+ margin-right:20px;
+}

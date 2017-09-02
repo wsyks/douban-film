@@ -1,0 +1,27 @@
+.container{
+  /* background-color: #2AAC5E; */
+  justify-content: center;
+  padding:30rpx 0 50rpx 0;
+  background-image: url("http://7xsgg1.com1.z0.glb.clouddn.com/mybg.png")
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width:180rpx;
+  height:180rpx;
+  /* margin: 20rpx; */
+  border-radius: 50%;
+  background-color:#fff;
+}
+
+.userinfo-nickname {
+  color: #fff;
+}
+
+.usermotto {
+  margin-top: 200px;
+}

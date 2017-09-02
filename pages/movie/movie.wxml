@@ -1,0 +1,31 @@
+<scroll-view class="">
+  <view class="film-header" style='background-image: url("{{filminfo.images.medium}}")'>
+    <!-- <image src="{{filminfo.images.medium}}" style="bg-image"></image> -->
+    <view class="header-content">
+      <image src="{{filminfo.images.medium}}" class="film-image"></image>
+      <view class="film-firstinfo">
+        <text class="film-title">{{filminfo.title}}</text>
+        <!-- <text class="film-title">{{filminfo.original_title == filminfo.title?"":filminfo.original_title}}</text> -->
+        <text class="film-rate">{{filminfo.rating.average == 0 ?"0分":filminfo.rating.average}}</text>
+        <text class="film-ratecount">{{filminfo.ratings_count}}人评价</text>
+      </view>     
+    </view>  
+  </view>
+  <view class="film-info">
+      <!-- <text wx:for-items="{{filminfo.genres}}"  wx:for-item="genres" >{{genres}}/</text>  -->
+    <view class="film-reinfo">{{filmgenres}}</view> 
+    <view class="film-reinfo">{{filminfo.pubdate?filminfo.pubdate+"上映 ":""}}{{filmcountry}}</view> 
+    <view class="film-reinfo">{{filmcast}}</view> 
+      <text></text> 
+    <button class="film-btn m-r-20" hover-class="film-btn-hover">想看</button> 
+    <button class="film-btn" hover-class="film-btn-hover">看过</button> 
+      <!-- <view class="film-summary"> -->
+    <text class="film-summarytitle">{{filminfo.title}}的剧情简介</text>  
+    <text class="film-summarycontent">{{filminfo.summary}}</text>  
+      <!-- </view>   -->
+  </view>
+
+  <view class="film-comment">
+
+  </view>     
+</scroll-view>
