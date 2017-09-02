@@ -59,7 +59,7 @@ Page({
             item.title = item.title.slice(0, 7) + "...";
           }
         })
-        that.data.films[i] = {title:titlelist[i],data:data.subjects,type:type};
+        that.data.films[i] = {title:titlelist[i],data:data.subjects,type:typelist[i]};
         that.setData({
           films: that.data.films
         });

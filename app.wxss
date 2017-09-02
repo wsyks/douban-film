@@ -10,3 +10,8 @@
   box-sizing: border-box;
   flex-wrap: wrap
 } 
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
