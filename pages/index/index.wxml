@@ -1,19 +1,23 @@
 <!--index.wxml-->
-
+<view class="film-topcontainer" style="display: flex;flex-direction: column;">  
 <view class="film-container" wx:for-items="{{films}}" wx:for-item="filminfo">
   <view class="film-header" scroll-x="false">
      <text class="list-title">{{filminfo.title}}</text>
      <button bindtap="toView" data-type="{{filminfo.type}}" class="more-btn" plain="false">更多></button>
   </view>
-  <scroll-view scroll-x="true" class="filmlist"> 
+  <view class="filmlist-container">
+
+    <scroll-view scroll-x="true" class="filmlist"> 
     <view  wx:for-items="{{filminfo.data}}"  wx:for-item="film" wx:key="id" class="film-item" data-title="{{film.title}}" data-id="{{film.id}}"  bindtap="detail">
       <image src="{{film.images.medium}}" alt="{{film.alt}}" class="film-image"></image>  
       <text class="film-title">{{film.title}}</text>  
       <text class="film-rate">{{film.rating.average==0?"暂无评分":"评分:"+film.rating.average}}</text>  
     </view>
   </scroll-view>  
+  </view> 
+  
 </view>  
-
+</view>
 
   <!-- <button bindtap="toView" data-type="coming_soon" class="more_btn" hover-class="more_btn_hover">更多></button> 
     <button bindtap="toView" data-type="in_theaters" class="more_btn" hover-class="more_btn_hover">更多></button>

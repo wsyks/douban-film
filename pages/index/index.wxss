@@ -18,13 +18,15 @@
   background-color: #efefef;
 
 }
-.filmlist{
+.filmlist-container{
   white-space: nowrap;
   display: flex;
   background-color: #fff;
+}
+.filmlist{
   margin:0;
   padding-top:8px;
-  /* width: 100%; */
+  width: 100%; 
 }
 .film-header{
   background-color: #fff;
