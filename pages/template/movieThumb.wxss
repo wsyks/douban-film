@@ -1,14 +1,9 @@
-.film-container{
-  padding-top:10px;
-  padding-bottom:10px;
-  width:94%;
-  margin:0 auto;
+/* pages/template/movieThumb.wxss */
 
-}
 .film-item{
-  width:30%;
+  width:110px;
   display:inline-block;
-  margin:0 1% 16px 2%;
+  margin:0 10px 16px 10px;
 
 }
 .film-image{

@@ -1,14 +1,47 @@
 // pages/my/my.js
 var app = getApp();
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    userInfo:[]
+    userInfo:[],
   },
-
+  login: function(){
+    var that = this;
+    wx.showModal({
+      // title: '提示',
+      content: '请授权允许使用您公开的用户信息(昵称，头像等)',
+      success: function (res) {
+        if (res.confirm) {
+          wx.openSetting({
+            success: function (data) {
+              if (data) {
+                if (data.authSetting["scope.userInfo"] == true) {
+                  wx.getUserInfo({
+                    withCredentials: false,
+                    success: function (data) {
+                      that.setData({
+                        userInfo: data.userInfo
+                      })
+                    },
+                    fail: function () {
+                      console.info("授权失败");
+                    }
+                  });
+                }
+              }
+            },
+            fail: function () {
+              console.info("设置失败");
+            }
+          });
+        }
+      }
+    });
+  },
   /**
    * 生命周期函数--监听页面加载
    */

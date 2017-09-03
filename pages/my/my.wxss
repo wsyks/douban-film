@@ -20,8 +20,20 @@
 
 .userinfo-nickname {
   color: #fff;
+  padding-top:10rpx;
 }
 
 .usermotto {
   margin-top: 200px;
+}
+.login-btn {
+  background-color:transparent;
+  font-size:0.6rem;
+  color:#fff;
+  border:1px solid #fff;
+  padding:3rpx 20rpx;
+  line-height:1.5;
+  position:absolute;
+  right:20rpx;
+  top:0rpx;
 }

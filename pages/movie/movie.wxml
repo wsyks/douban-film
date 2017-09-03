@@ -5,9 +5,17 @@
       <image src="{{filminfo.images.medium}}" class="film-image"></image>
       <view class="film-firstinfo">
         <text class="film-title">{{filminfo.title}}</text>
-        <!-- <text class="film-title">{{filminfo.original_title == filminfo.title?"":filminfo.original_title}}</text> -->
-        <text class="film-rate">{{filminfo.rating.average == 0 ?"0分":filminfo.rating.average}}</text>
-        <text class="film-ratecount">{{filminfo.ratings_count}}人评价</text>
+        <!-- <text class="film-title">{{filminfo.original_title == filminfo.title?"":filminfo.original_title}}</text> --> 
+        <view class="film-rate-container" wx:if="{{filminfo.rating.average!=0}}" style="">
+          <text class="film-rate">{{filminfo.rating.average}}</text>
+          <view class="film-star-container" style="">
+            <view class="film-star {{filminfo.rating.star}}"></view>
+            <text class="film-ratecount">{{filminfo.ratings_count}}人评价</text>
+          </view>  
+          
+        </view>
+        <text class="film-rate-tip" wx:else>暂无评分</text>
+        
       </view>     
     </view>  
   </view>

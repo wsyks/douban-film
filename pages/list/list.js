@@ -24,13 +24,13 @@ Page({
     var title = app.globalData.pageTypelist[options.type];
     wx.setNavigationBarTitle({ title: title })
     console.log(this.data.pageType);
-    wx.showLoading({
-      title: '玩命加载中',
-      mask: true,
-      success: function (res) { },
-      fail: function (res) { },
-      complete: function (res) { },
-    })
+    // wx.showLoading({
+    //   title: '玩命加载中',
+    //   mask: true,
+    //   success: function (res) { },
+    //   fail: function (res) { },
+    //   complete: function (res) { },
+    // })
     this.getFilm();
     
   },
@@ -102,6 +102,11 @@ Page({
         if (item.title.length > 8) {
                 // var temp = item.title.slice()
           item.title = item.title.slice(0, 7) + "...";
+        }
+        if (item.rating.average >= 9.5) {
+          item.rating.star = "star10";
+        } else {
+          item.rating.star = "star" + Math.round(item.rating.average);
         }
       })
       that.setData({

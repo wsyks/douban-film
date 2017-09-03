@@ -15,3 +15,45 @@
   height: 0;
   color: transparent;
 }
+.film-star{
+  background-image:url(http://7xsgg1.com1.z0.glb.clouddn.com/star1.png);
+  height:12px;
+  width:70px;
+  /* background-position:0 100%; */
+  background-size:90%;
+  background-repeat:no-repeat;
+  display: inline-block;
+}
+.star0{
+  background-position:0 100%;
+}
+.star1{
+  background-position:0 90%;
+}
+.star2{
+  background-position:0 80%;
+}
+.star3{
+  background-position:0 70%;
+}
+.star4{
+  background-position:0 60%;
+}
+.star5{
+  background-position:0 50%;
+}
+.star6{
+  background-position:0 40%;
+}
+.star7{
+  background-position:0 30%;
+}
+.star8{
+  background-position:0 20%;
+}
+.star9{
+  background-position:0 10%;
+}
+.star10{
+  background-position:0 0%;
+}

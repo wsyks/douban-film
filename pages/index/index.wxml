@@ -1,4 +1,5 @@
 <!--index.wxml-->
+<import src="../template/movieThumb.wxml" />
 <view class="film-topcontainer" style="display: flex;flex-direction: column;">  
 <view class="film-container" wx:for-items="{{films}}" wx:for-item="filminfo">
   <view class="film-header" scroll-x="false">
@@ -7,13 +8,10 @@
   </view>
   <view class="filmlist-container">
 
-    <scroll-view scroll-x="true" class="filmlist"> 
-    <view  wx:for-items="{{filminfo.data}}"  wx:for-item="film" wx:key="id" class="film-item" data-title="{{film.title}}" data-id="{{film.id}}"  bindtap="detail">
-      <image src="{{film.images.medium}}" alt="{{film.alt}}" class="film-image"></image>  
-      <text class="film-title">{{film.title}}</text>  
-      <text class="film-rate">{{film.rating.average==0?"暂无评分":"评分:"+film.rating.average}}</text>  
-    </view>
-  </scroll-view>  
+    <scroll-view scroll-x="true" class="filmlist">
+      <template is="movieThumb" wx:for-items="{{filminfo.data}}"  wx:for-item="film" wx:key="id" data="{{...film}}">   
+      </template>
+    </scroll-view>  
   </view> 
   
 </view>  

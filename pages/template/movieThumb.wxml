@@ -1,0 +1,12 @@
+<!--pages/template/movieThumb.wxml-->
+<template name="movieThumb">  
+<view wx:key="id" class="film-item" data-title="{{title}}" data-id="{{id}}"  bindtap="detail">
+  <image src="{{images.medium}}" alt="{{alt}}" class="film-image"></image>  
+  <text class="film-title">{{title}}</text>  
+  <view class="film-rate" wx:if="{{rating.average!=0}}">
+    <view class="film-star {{rating.star}}"></view>
+    <text>{{rating.average}}</text>
+  </view>
+  <text class="film-rate" wx:else>暂无评分</text>  
+</view>
+</template>

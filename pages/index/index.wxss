@@ -49,17 +49,17 @@
   display: block;
 }
 .film-title{
-  font-size: 0.6em;
+  font-size: 0.6rem;
   font-weight: 600;
   line-height: 0.8;
 }
 .film-rate{
-  font-size: 0.4em;
+  font-size: 0.4rem;
   display: block;
   line-height: 0.7;
 }
 .list-title{
-  font-size: 0.65em;
+  font-size: 0.65rem;
   font-weight: 600;
    /* border-left: 2px solid #2aac5e; */
    /* padding: 0 0 0 8px;   */
@@ -79,7 +79,7 @@
   background-color:#fff;
   color:#2aac5e !important;
   /* padding:4px 6px; */
-  font-size:0.6em;
+  font-size:0.6rem;
   line-height:1.5;
   /* border:1px #fff; */
   margin:0;

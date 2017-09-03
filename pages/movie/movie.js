@@ -44,10 +44,16 @@ Page({
       
             var directors = [];
             var casts = [];
+            if (data.rating.average >= 9.5) {
+              data.rating.star = "star10";
+            } else {
+              data.rating.star = "star" + Math.round(data.rating.average);
+            }
             for(var item in data.directors){
                 console.log(item);
                 directors.push(data.directors[item].name + "(导演) ");
             }
+            console.log(data);
             for (var item in data.casts) {
               console.log(item);
               casts.push(" " + data.casts[item].name + " ");

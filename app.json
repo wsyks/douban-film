@@ -1,5 +1,5 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/my/my",
     "pages/movie/movie",
@@ -12,7 +12,7 @@
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
-    "color": "#D9DADA", 
+    "color": "#D9DADA",
     "selectedColor": "#2aac5e",
     "backgroundColor": "#ffffff",
     "borderStyle": "white",

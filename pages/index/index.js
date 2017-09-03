@@ -58,6 +58,12 @@ Page({
           if (item.title.length > 8) {
             item.title = item.title.slice(0, 7) + "...";
           }
+          if (item.rating.average>=9.5){
+            item.rating.star = "star10";
+          }else{
+            item.rating.star = "star" + Math.round(item.rating.average);
+          }
+          console.log(item.rating.star);
         })
         that.data.films[i] = {title:titlelist[i],data:data.subjects,type:typelist[i]};
         that.setData({
