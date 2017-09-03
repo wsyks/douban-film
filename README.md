@@ -5,18 +5,18 @@
 ![效果2][3]
 ![效果3][4]
 ![效果4][2]
-之后会在博客上更新相关教程
+
 
   ## 相关说明
   使用的是豆瓣电影的API
 
  - 【获取正在上映电影】  
  https://api.douban.com/v2/movie/v2/movie/in_theaters
- - 【获取豆瓣TOP250电影】
+ - 【获取豆瓣TOP250电影】  
  https://api.douban.com/v2/movie/v2/movie/top250
- - 【 获取即将上映电影】
+ - 【 获取即将上映电影】  
 https://api.douban.com/v2/movie/v2/movie/coming_soon
- - 【获取具体某一电影信息】
+ - 【获取具体某一电影信息】  
  https://api.douban.com/v2/movie/v2/movie/subject/:id
  
  详细数据情况可看 
