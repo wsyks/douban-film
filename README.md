@@ -3,8 +3,8 @@
 ## 效果预览
 ![效果1][1]
 ![效果2][3]
-![效果3][4]
-![效果4][2]
+![效果3][2]
+![效果4][4]
 
 
   ## 相关说明
@@ -25,7 +25,7 @@ https://api.douban.com/v2/movie/v2/movie/coming_soon
  如果对你有帮助，就star一下吧
 
 
-  [1]: http://7xsgg1.com1.z0.glb.clouddn.com/doubanfilm1.gif
-  [2]: http://7xsgg1.com1.z0.glb.clouddn.com/doubanfilm2.gif
-  [3]: http://7xsgg1.com1.z0.glb.clouddn.com/doubanfilm3.gif
-  [4]: http://7xsgg1.com1.z0.glb.clouddn.com/doubanfilm4.gif
+  [1]: http://7xsgg1.com1.z0.glb.clouddn.com/douban1.gif
+  [2]: http://7xsgg1.com1.z0.glb.clouddn.com/douban2.gif
+  [3]: http://7xsgg1.com1.z0.glb.clouddn.com/douban3.gif
+  [4]: http://7xsgg1.com1.z0.glb.clouddn.com/douban4.gif
