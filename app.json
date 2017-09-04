@@ -26,8 +26,8 @@
       {
         "pagePath": "pages/my/my",
         "text": "我的",
-        "iconPath": "img/my1.png",
-        "selectedIconPath": "img/my_select1.png"
+        "iconPath": "img/my.png",
+        "selectedIconPath": "img/my_select.png"
       }
     ]
   }
